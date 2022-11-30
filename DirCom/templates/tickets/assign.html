@@ -7,11 +7,11 @@
 
     <div class="container mb-5">
         <p class="mb-3"><a class="text-decoration-none" href="{% url 'tickets_app:all' %}">< Volver</a></p>
-        <h1 class="me-4">Rechazar ticket</h1>
+        <h1 class="me-4">Asignar ticket a un analista</h1>
 
         <form class="pt-2 pb-5 mw-600" method="POST" enctype="multipart/form-data">
             {% csrf_token %} {{ form.as_p }}
-            <button class="btn btn-primary" type="submit">Enviar</button>
+            <button class="btn btn-primary" type="submit">Asignar</button>
         </form>
     </div>
 {% endblock content %}
